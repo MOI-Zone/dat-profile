@@ -1,94 +1,352 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
-.container{
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body{
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-family: 'poppins';  
-    color: white;
 }
+ aside{
+     padding-top: 80px;
+   margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  transition-duration: 400ms;
+  
+ } 
 
-.card{
-    background: #242628;
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    text-align: center;
-    overflow: hidden;
-}
-
-img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center;
-}
-
-.card__img{
-    width: 120px;
-    height: 120px;
-    border: 4px solid #00FFFF;
+  
+ header{
+   display: inline-block;
+  padding: 0 0px;
+  background-color: #222;
+  color: #333;
+  box-shadow: 0 2px 7px rgba(0,0,0,.15);
+  border-radius: 5px;
+  transition-duration: 100ms;
+  border-left: 20px solid rgba(161, 161, 161, 0.2);
+  border-right: 20px solid rgba(161, 161, 161, 0.2);
+  background-size: cover;
+ }
+ 
+header>a {
+    display: inline-flex;
+  background-color: #444;
+  border-radius: 50%;
+    width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 100px;
+  left: 73px;
+  z-index: 99999;
+  border:5px solid #444;
+  box-shadow: 0 2px 7px rgba(0,0,0,.2);
+    transition-duration: 600ms;
+ }
+ 
+ header>a>img {
     border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    transform: translateY(25px);
-    transition: 0.4s;
+    box-shadow: 0 0 0px rgba(100,150,255,1);
+    width:100%;
+    transition-duration: 600ms;
+ }
+
+ 
+ aside:hover header>a>img {
+   box-shadow: 0 0 200px rgba(255,150,255,1);
+ }
+ 
+ header>h1,header>h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 7px;
+    font-size: 29px;
+    margin-top: 170px;
+    transition-duration: 400ms;
+ }
+ aside:hover{
+   padding-top: 180px;
+ }
+ aside:hover header>h1{
+   margin-top: 80px;
+ }
+ 
+header>h2{
+    margin-bottom: 30px;
+ }
+  aside:hover header>h2{
+   margin-bottom: 10px;
+ }
+ header>h1{
+
+     font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.20);
+ }
+header>h2{
+   font-size: 16px;
+   margin-top: 0;
+     font-weight: bold;
+  color: #999;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+ }
+
+
+
+ .profile-bio {
+  /* display: none; */
+  font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  margin: 0px 30px;
+  display: inline-block;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  border-radius: 0px;
+  z-index: 999999;
+  transition-duration: 400ms;
+  transform: translateY(-160px);
+    z-index: -99999999999;
+  position: relative;
+    border-radius: 0 0 5px 5px;
+ }
+ aside:hover .profile-bio {
+   opacity: 1;
+   transform: translateY(0px);
+ }
+
+.audio{
+  border: 2px sodial #99ffbd;
+  width: 300px;
+  border-radius: 100px;
 }
 
-.card h2{
-    margin-top: 35px;
+ .profile-social-links{
+     float: left;
+  padding: 0;
+  margin: 0;
+    position: absolute;
+  top: 0;
+  left: 73px;
+  width:154px;
+  height: 154px;
+  top: 100px;
+  /*transform: rotate(-60deg);*/
+  transform: scale(1,1);
+  transition-duration: 400ms;
+  opacity: 1;
+    z-index: 1;
+  
+ }
+ .profile-social-links li{
+   float:left;
+   width: 50px;
+   height: 50px;
+     display: block;
+  background-color: #222;
+  border: 1px solid #333;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.06);
+  margin: 5px;
+  border-radius: 50%; 
+ }
+  body > aside > ul > li > a{
+    padding: 10px;
+  }
+ body > aside > ul > li:nth-child(1){
+   position: absolute;
+  top: -90px;
+  left: -50px;
+  transform:translate(100px,100px);
+    transition-duration:400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.3, -0.7, 0.63, 0.7);
+ }
+ body > aside > ul > li:nth-child(2){
+   position: absolute;
+  top: -110px;
+  left: 48px;
+  transform:translate(0px,150px);
+    transition-duration: 450ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.3, -0.7, 0.63, 0.7);
+ }
+ body > aside > ul > li:nth-child(3){
+    position: absolute;
+  top: -90px;
+  right: -50px;
+  transform:translate(-100px,100px);
+    transition-duration:500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.3, -0.7, 0.63, 0.7);
+}
+ body > aside > ul > li:nth-child(4){
+    position: absolute;
+  top: -7px;
+  right: 159px;
+  transform:translate(90px,30px);
+    transition-duration:550ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.3, -0.7, 0.63, 0.7);
+}
+ body > aside > ul > li:nth-child(5){
+    position: absolute;
+  top: -7px;
+  right: -60px;
+  transform:translate(-90px,30px);
+    transition-duration:600ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.3, -0.7, 0.63, 0.7);
+}
+ body > aside > ul > li:nth-child(1) a{
+   transform: rotate(-40deg);
+   float: left;
+ }
+ body > aside > ul > li:nth-child(2) a{
+  float: left;
+ }
+ body > aside > ul > li:nth-child(3) a{
+  transform: rotate(40deg);
+   float: left;
+}
+ body > aside > ul > li:nth-child(4) a{
+  transform: rotate(-55deg);
+   float: right;
+}
+ body > aside > ul > li:nth-child(5) a{
+  transform: rotate(55deg);
+   float: right;
+}
+ .profile-social-links img{
+   width:100%;
+   height:auto;
+ }
+ 
+aside:hover .profile-social-links li:nth-child(1){
+   transform:translate(0px,0px);
+ }
+  aside:hover .profile-social-links li:nth-child(2){
+    transform:translate(0px,0px);
+ }
+  aside:hover .profile-social-links li:nth-child(3){
+    transform:translate(0px,0px);
+ }
+  aside:hover .profile-social-links li:nth-child(4){
+    transform:translate(0px,0px);
+ }
+aside:hover .profile-social-links li:nth-child(5){
+    transform:translate(0px,0px);
+ }
+ /**********line***********/
+ .profile-social-links li>a:before{
+   content: '';
+   position: absolute;
+   top:100%;
+   left:50%;
+   width:1px;
+   height: 50px;
+   background-color: #222;
+   box-shadow: 0px 2px 4px rgba(0,0,0,.09);
+   transition-duration:800ms;
+   
+ }
+ aside:hover .profile-social-links li>a:before{
+
+   height: 100px;
+
+ }
+
+  .profile-social-links li>a:after{
+   content: '';
+   position: absolute;
+    background: url('images/avt-Bok.png');
+   background-size: cover;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+   background-color: #eee;
+   box-shadow: 0px 2px 4px rgba(0,0,0,.09);
+   transition-duration:500ms;
+   opacity: 0;
+   transform: scale(3);
+   
+ }
+ .profile-social-links li:nth-child(1)>a:after{
+   background: url('images/github.svg');
+   background-size: cover;
+ }
+ .profile-social-links li:nth-child(2)>a:after{
+   background: url('images/tiktok.svg');
+   background-size: cover;
+ }
+ .profile-social-links li:nth-child(3)>a:after{
+   background: url('images/instagram.svg');
+   background-size: cover;
+ }
+ .profile-social-links li:nth-child(4)>a:after{
+   background: url('images/facebook.svg');
+   background-size: cover;
+ }
+.profile-social-links li:nth-child(5)>a:after{
+   background: url('images/mandalorian.svg');
+   background-size: cover;
+ }
+   .profile-social-links li:hover>a:after{
+     opacity: 1;
+     transform: scale(0);
+   }
+ /***********************animation after 5 sec**********************************/
+ 
+.profile-social-links{
+   transition-duration:200ms;
+
+   
+ }
+ aside:hover .profile-social-links{
+   transform:rotate(0deg);
+   -webkit-animation-name: example;  
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 5s; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: linear;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    
+ }
+
+aside:hover header>a{
+  transform:rotate(0deg);
+   -webkit-animation-name: example; 
+    -webkit-animation-duration: 3s; 
+    -webkit-animation-delay: 5s; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: linear;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-.card p{
-    color: #b1e7e7;
+@-webkit-keyframes example {
+    0%    {transform:rotate(0deg)}
+    20%    {transform:rotate(15deg)}
+    70%    {transform:rotate(-15deg)}
+    100%  {transform:rotate(0deg)}
 }
 
-.social{
-    margin: 30px 0;
-}
 
-.social a{
-   color: white;
-   margin: 25px 25px;
-   font-size: 23px;
-}
-
-.social a:hover{
-    color: #00FFFF;
-}
-
-.card button {
-    width: 150px;
-    height: 40px;
-    border: 1px solid #00FFFF;
-    background: transparent;
-    color: #b1e7e7;
-    border-radius: 16px;
-    transition: 0.5s;
-}
-
-.card button a{
-     color: #fdffff;
-}
-
-.card button:hover{
-    background: #00FFFF;
-}
-
-.card__img:hover{
-    width: 100%;
-    height: 100%;
-    border-radius: unset;
-    transform: unset;
-    border: none;
+@keyframes example {
+   0%    {transform:rotate(0deg)}
+    20%    {transform:rotate(15deg)}
+    70%    {transform:rotate(-15deg)}
+    100%  {transform:rotate(0deg)}
 }
