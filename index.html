@@ -1,58 +1,90 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card - Cao Chung Đạt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://imgur.com/b7BPW9e.png">
-  </head>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card - Cao Chung Đạt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://imgur.com/b7BPW9e.png">
+</head>
+
 <body>
-<aside class="profile-card">
-  <header>
-    <!-- here’s the avatar -->
-    <a href="https://caochungdat.me">
+  <aside class="profile-card">
+    <a class="avt" href="https://caochungdat.me">
       <img src="images/avt-Bok.png">
     </a>
-    <!-- the username -->
-    <h1>Cao Chung Đạt</h1>
-    <h2>Student</h2>
-  </header>
-  <div class="profile-bio">
-    <p>Tôi tên Cao Chung Đạt, sống tại Hồ Chính Minh, Việt Nam. Và đang là sinh viên nghành công nghệ thông tin. Thật sự xin được học hỏi từ các đàn anh/chi đi trước</p>
-  </div>
-<audio controls="" class="audio">
-  <source src="https://files.catbox.moe/stmi8k.mp3" type="audio/mpeg">
-</audio>
-  <ul class="profile-social-links">
-    <li>
-      <a href="https://github.com/chungdat02">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-                        <i class="fab fa-github fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.tiktok.com/@chungdat02">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-                        <i class="fab fa-tiktok fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/cntt2410.hacker">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-                        <i class="fab fa-instagram fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/cntt2410.hacker">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-                        <i class="fab fa-facebook fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/cntt2410.hacker">
-                        <i class="fab fa-mandalorian fa-2x"></i>
-      </a>
-    </li>
-  </ul>
-</aside>
+    <div class="wrapper">
+      <div class="info">
+        <!-- here’s the avatar -->
+
+        <!-- the username -->
+        <h1>Cao Chung Đạt <i role="img"
+            style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/NrKQWioCIsR.png&quot;); background-size: 189px 177px; width: 16px; height: 16px; display: inline-block; background-position: -63px -126px; background-repeat: no-repeat no-repeat;"></i>
+        </h1>
+        <h2>Student</h2>
+      </div>
+    </div>
+    <div class="profile-bio">
+      <p>Tôi tên Cao Chung Đạt, sống tại Hồ Chính Minh, Việt Nam. Và đang là sinh viên ngành công nghệ thông tin. Thật
+        sự xin được học hỏi từ các đàn anh/chi đi trước</p>
+
+      <div class="player">
+        <!-- <div id="info" class="info">
+          <span class="artist">Flume</span>
+          <span class="name">Say it</span>
+          <div class="progress-bar">
+            <div class="bar"></div>
+          </div>
+        </div> -->
+        <div id="control-panel" class="control-panel">
+          <div class="album-art"></div>
+          <div class="controls">
+            <div class="prev"></div>
+            <div id="play" class="play"></div>
+            <div class="next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="profile-social-links">
+      <li>
+        <a href="https://github.com/chungdat02">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" />
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.tiktok.com/@chungdat02">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" />
+          <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/cntt2410.hacker">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" />
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/cntt2410.hacker">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" />
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/cntt2410.hacker">
+          <i class="fab fa-mandalorian fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </aside>
 </body>
+<script src="./index.js"></script>
 </html>
